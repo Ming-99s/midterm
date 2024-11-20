@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: sans-serif;
+    color: #cacaca;
+    font-size: 24px;
+    height: 100vh;
+    display: grid;
+    text-align: center;
+    font-weight: bold;
+    grid-template-columns:  80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+    grid-template-areas:  
+    "navbar menu menu menu"
+    "navbar  section main aside";
+    color:#343a40;
+
+  }
+  nav{
+    color:white;
+    grid-area: navbar;
+    background-color: #343a40;
+    background-color: #343a40;
+
+  }
+  section{
+    grid-area: section;
+    background-color: #e9ecef;
+    overflow: scroll;
+    .email{
+      background-color: #cccdce;
+      margin: 40px;
+      padding: 20px;
+    }
+  }
+  main{
+    grid-area: main;
+  }
+  aside{
+    grid-area: aside;
+    background-color: #e9ecef;
+
+}
+menu{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    text-align: start;    
+    background-color: #7048e8;
+    grid-area: menu;
+    #container{
+        margin-left: 40px;
+        #trash{
+            background-color: rgb(243, 83, 83);
+            position: absolute;
+            right: 2rem;
+            color:white;
+            font-weight: bold;
+        }
+        button{
+          padding:10px;
+          color:white;
+          font-weight: bold;
+          background-color: #4422ac;
+          border:none;
+    
+        }
+    }
+
+  }

@@ -1,0 +1,39 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+  grid-template-rows: repeat(5,50px);
+}
+.item{
+  padding: 20px;
+  text-align: center;
+}
+.Green{
+  background-color: green;
+  color:white
+}
+.white{
+  background-color: rgb(235, 235, 235);
+}
+.Gray{
+  background-color: rgb(185, 183, 183);
+}
+#head{
+  font-weight: bold;
+}
